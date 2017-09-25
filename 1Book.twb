@@ -1,0 +1,2609 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0915.2101                               -->
+<workbook original-version='10.3' source-build='10.3.3 (10300.17.0915.2101)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (salary_data_states_corrected)' inline='true' name='federated.0voguse1il942p15tiglm0xg5asa' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='salary_data_states_corrected' name='excel-direct.0hcwuxa0ro18ii1a8mnd60adoa3t'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Cousera/data visulization using tablue/salary_data_states_corrected.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hcwuxa0ro18ii1a8mnd60adoa3t' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:AA10001:no:A1:AA10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='CASE_NUMBER' ordinal='0' />
+            <column datatype='string' name='CASE_STATUS' ordinal='1' />
+            <column datatype='date' date-parse-format='MM/dd/yyyy' name='CASE_RECEIVED_DATE' ordinal='2' />
+            <column datatype='date' date-parse-format='MM/dd/yyyy' name='DECISION_DATE' ordinal='3' />
+            <column datatype='string' name='EMPLOYER_NAME' ordinal='4' />
+            <column datatype='string' name='PREVAILING_WAGE_SUBMITTED' ordinal='5' />
+            <column datatype='string' name='PREVAILING_WAGE_SUBMITTED_UNIT' ordinal='6' />
+            <column datatype='integer' name='PAID_WAGE_SUBMITTED' ordinal='7' />
+            <column datatype='string' name='PAID_WAGE_SUBMITTED_UNIT' ordinal='8' />
+            <column datatype='string' name='JOB_TITLE' ordinal='9' />
+            <column datatype='string' name='WORK_CITY' ordinal='10' />
+            <column datatype='string' name='EDUCATION_LEVEL_REQUIRED' ordinal='11' />
+            <column datatype='string' name='COLLEGE_MAJOR_REQUIRED' ordinal='12' />
+            <column datatype='string' name='EXPERIENCE_REQUIRED_Y_N' ordinal='13' />
+            <column datatype='integer' name='EXPERIENCE_REQUIRED_NUM_MONTHS' ordinal='14' />
+            <column datatype='string' name='COUNTRY_OF_CITIZENSHIP' ordinal='15' />
+            <column datatype='string' name='PREVAILING_WAGE_SOC_CODE' ordinal='16' />
+            <column datatype='string' name='PREVAILING_WAGE_SOC_TITLE' ordinal='17' />
+            <column datatype='string' name='WORK_STATE' ordinal='18' />
+            <column datatype='string' name='WORK_STATE_ABBREVIATION' ordinal='19' />
+            <column datatype='string' name='WORK_POSTAL_CODE' ordinal='20' />
+            <column datatype='string' name='FULL_TIME_POSITION_Y_N' ordinal='21' />
+            <column datatype='string' name='VISA_CLASS' ordinal='22' />
+            <column datatype='real' name='PREVAILING_WAGE_PER_YEAR' ordinal='23' />
+            <column datatype='real' name='PAID_WAGE_PER_YEAR' ordinal='24' />
+            <column datatype='string' name='JOB_TITLE_SUBGROUP' ordinal='25' />
+            <column datatype='integer' name='order' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>12</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AA10001:no:A1:AA2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_NUMBER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CASE_NUMBER]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CASE_NUMBER</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_STATUS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CASE_STATUS]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CASE_STATUS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_RECEIVED_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CASE_RECEIVED_DATE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CASE_RECEIVED_DATE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DECISION_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DECISION_DATE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>DECISION_DATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EMPLOYER_NAME]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EMPLOYER_NAME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREVAILING_WAGE_SUBMITTED</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PREVAILING_WAGE_SUBMITTED]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PREVAILING_WAGE_SUBMITTED</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREVAILING_WAGE_SUBMITTED_UNIT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PREVAILING_WAGE_SUBMITTED_UNIT]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PREVAILING_WAGE_SUBMITTED_UNIT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAID_WAGE_SUBMITTED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAID_WAGE_SUBMITTED]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PAID_WAGE_SUBMITTED</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAID_WAGE_SUBMITTED_UNIT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PAID_WAGE_SUBMITTED_UNIT]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PAID_WAGE_SUBMITTED_UNIT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JOB_TITLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[JOB_TITLE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>JOB_TITLE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORK_CITY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WORK_CITY]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WORK_CITY</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EDUCATION_LEVEL_REQUIRED</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EDUCATION_LEVEL_REQUIRED]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EDUCATION_LEVEL_REQUIRED</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLLEGE_MAJOR_REQUIRED</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COLLEGE_MAJOR_REQUIRED]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>COLLEGE_MAJOR_REQUIRED</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXPERIENCE_REQUIRED_Y_N</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EXPERIENCE_REQUIRED_Y_N]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EXPERIENCE_REQUIRED_Y_N</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXPERIENCE_REQUIRED_NUM_MONTHS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EXPERIENCE_REQUIRED_NUM_MONTHS]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EXPERIENCE_REQUIRED_NUM_MONTHS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY_OF_CITIZENSHIP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY_OF_CITIZENSHIP]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>COUNTRY_OF_CITIZENSHIP</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREVAILING_WAGE_SOC_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PREVAILING_WAGE_SOC_CODE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PREVAILING_WAGE_SOC_CODE</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREVAILING_WAGE_SOC_TITLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PREVAILING_WAGE_SOC_TITLE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PREVAILING_WAGE_SOC_TITLE</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORK_STATE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WORK_STATE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WORK_STATE</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORK_STATE_ABBREVIATION</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WORK_STATE_ABBREVIATION]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WORK_STATE_ABBREVIATION</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORK_POSTAL_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WORK_POSTAL_CODE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WORK_POSTAL_CODE</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FULL_TIME_POSITION_Y_N</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FULL_TIME_POSITION_Y_N]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>FULL_TIME_POSITION_Y_N</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VISA_CLASS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[VISA_CLASS]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>VISA_CLASS</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREVAILING_WAGE_PER_YEAR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PREVAILING_WAGE_PER_YEAR]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PREVAILING_WAGE_PER_YEAR</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAID_WAGE_PER_YEAR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAID_WAGE_PER_YEAR]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PAID_WAGE_PER_YEAR</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JOB_TITLE_SUBGROUP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[JOB_TITLE_SUBGROUP]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>JOB_TITLE_SUBGROUP</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>order</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Case Number' datatype='string' name='[CASE_NUMBER]' role='dimension' type='nominal' />
+      <column caption='Case Received Date' datatype='date' name='[CASE_RECEIVED_DATE]' role='dimension' type='ordinal' />
+      <column caption='Case Status' datatype='string' name='[CASE_STATUS]' role='dimension' type='nominal' />
+      <column caption='College Major Required' datatype='string' name='[COLLEGE_MAJOR_REQUIRED]' role='dimension' type='nominal' />
+      <column caption='Country Of Citizenship' datatype='string' name='[COUNTRY_OF_CITIZENSHIP]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='rank' datatype='integer' name='[Calculation_49821124868558850]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Calculation1' datatype='string' name='[Calculation_49821124870549507]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [WORK_STATE] = &apos;California&apos;&#13;&#10;OR  [WORK_STATE] = &apos;Washington&apos;&#13;&#10;OR  [WORK_STATE] = &apos;Texas&apos;&#13;&#10;OR  [WORK_STATE] = &apos;Alabama&apos;&#13;&#10;OR  [WORK_STATE] = &apos;North Carolina&apos;&#13;&#10;OR  [WORK_STATE] = &apos;New York&apos;&#13;&#10;OR  [WORK_STATE] = &apos;Massachusetts&apos;&#13;&#10;OR  [WORK_STATE] = &apos;Maine&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;ELSE &quot;Don&apos;t view&quot;&#13;&#10;END' />
+      </column>
+      <column caption='States we are interested in' datatype='string' name='[Calculation_49821124875595780]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE  [WORK_STATE] &#13;&#10;WHEN &apos;California&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Washington&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Texas&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN &apos;Alabama&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;North Carolina&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;New York&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Massachusetts&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Maine&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;ELSE &quot;Don&apos;t view&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Difference Btw Prevaling Wages and Paid Wages' datatype='real' name='[Calculation_49821124877742085]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[PAID_WAGE_PER_YEAR]-[PREVAILING_WAGE_PER_YEAR]' />
+      </column>
+      <column aggregation='CountD' caption='paying less then prevaling wage' datatype='string' name='[Calculation_49821124878221318]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_49821124877742085]&lt;0&#13;&#10;THEN &quot;Paid less then prevaling wages&quot;&#13;&#10;ELSE &quot;Paind prevaling wage for higher&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Adjusted Paid Wage' datatype='real' name='[Calculation_49821124951584776]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(MEDIAN([PAID_WAGE_PER_YEAR])/ATTR([federated.1l1m7y80skqdq51bqhrps1p280iu].[Price Parity]))* 100' />
+      </column>
+      <column caption='Decision Date' datatype='date' name='[DECISION_DATE]' role='dimension' type='ordinal' />
+      <column caption='Education Level Required' datatype='string' name='[EDUCATION_LEVEL_REQUIRED]' role='dimension' type='nominal' />
+      <column caption='Employer Name' datatype='string' name='[EMPLOYER_NAME]' role='dimension' type='nominal' />
+      <column caption='Experience Required Num Months' datatype='integer' name='[EXPERIENCE_REQUIRED_NUM_MONTHS]' role='dimension' type='ordinal' />
+      <column caption='Experience Required Y N' datatype='string' name='[EXPERIENCE_REQUIRED_Y_N]' role='dimension' type='nominal' />
+      <column caption='Full Time Position Y N' datatype='string' name='[FULL_TIME_POSITION_Y_N]' role='dimension' type='nominal' />
+      <column caption='Job Title' datatype='string' name='[JOB_TITLE]' role='dimension' type='nominal' />
+      <column caption='Job Title Subgroup' datatype='string' name='[JOB_TITLE_SUBGROUP]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Median' caption='Paid Wage Per Year' datatype='real' name='[PAID_WAGE_PER_YEAR]' role='measure' type='quantitative' />
+      <column caption='Paid Wage Submitted' datatype='integer' name='[PAID_WAGE_SUBMITTED]' role='measure' type='quantitative' />
+      <column caption='Paid Wage Submitted Unit' datatype='string' name='[PAID_WAGE_SUBMITTED_UNIT]' role='dimension' type='nominal' />
+      <column aggregation='Median' caption='Prevailing Wage Per Year' datatype='real' name='[PREVAILING_WAGE_PER_YEAR]' role='measure' type='quantitative' />
+      <column caption='Prevailing Wage Soc Code' datatype='string' name='[PREVAILING_WAGE_SOC_CODE]' role='dimension' type='nominal' />
+      <column caption='Prevailing Wage Soc Title' datatype='string' name='[PREVAILING_WAGE_SOC_TITLE]' role='dimension' type='nominal' />
+      <column caption='Prevailing Wage Submitted' datatype='string' name='[PREVAILING_WAGE_SUBMITTED]' role='dimension' type='nominal' />
+      <column caption='Prevailing Wage Submitted Unit' datatype='string' name='[PREVAILING_WAGE_SUBMITTED_UNIT]' role='dimension' type='nominal' />
+      <column caption='Visa Class' datatype='string' name='[VISA_CLASS]' role='dimension' type='nominal' />
+      <column caption='Work City' datatype='string' name='[WORK_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Work Postal Code' datatype='string' name='[WORK_POSTAL_CODE]' role='dimension' type='nominal' />
+      <column caption='Work State' datatype='string' name='[WORK_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Work State Abbreviation' datatype='string' name='[WORK_STATE_ABBREVIATION]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Order' datatype='integer' name='[order]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.437229' measure-ordering='alphabetic' measure-percentage='0.562771' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.1l1m7y80skqdq51bqhrps1p280iu'>
+        <column datatype='real' name='[Price Parity]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
+    <datasource caption='Sheet1 (price_parity)' inline='true' name='federated.1l1m7y80skqdq51bqhrps1p280iu' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='price_parity' name='excel-direct.1gdyriy1msygdf1f10qba0k6vjpw'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Cousera/data visulization using tablue/price_parity.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1gdyriy1msygdf1f10qba0k6vjpw' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B52:no:A1:B52:0' header='yes' outcome='6'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='real' name='Price Parity' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Parity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price Parity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Price Parity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B52:no:A1:B52:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.4329' measure-ordering='alphabetic' measure-percentage='0.5671' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.0voguse1il942p15tiglm0xg5asa'>
+      <column caption='Work State' datatype='string' name='[WORK_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[WORK_STATE]' derivation='None' name='[none:WORK_STATE:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1l1m7y80skqdq51bqhrps1p280iu'>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.0voguse1il942p15tiglm0xg5asa' target='federated.1l1m7y80skqdq51bqhrps1p280iu'>
+      <column-mapping>
+        <map key='[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]' value='[federated.1l1m7y80skqdq51bqhrps1p280iu].[none:State:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='OpenSans-Light,Arial,sans-serif'>Identifying Companies that Pay Less than the Prevailing Wage</run>
+            <run fontcolor='#ffffffb2' fontname='OpenSans,Arial,sans-serif' fontsize='11'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (salary_data_states_corrected)' name='federated.0voguse1il942p15tiglm0xg5asa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0voguse1il942p15tiglm0xg5asa'>
+            <column caption='Difference Btw Prevaling Wages and Paid Wages' datatype='real' name='[Calculation_49821124877742085]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[PAID_WAGE_PER_YEAR]-[PREVAILING_WAGE_PER_YEAR]' />
+            </column>
+            <column aggregation='CountD' caption='paying less then prevaling wage' datatype='string' name='[Calculation_49821124878221318]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_49821124877742085]&lt;0&#13;&#10;THEN &quot;Paid less then prevaling wages&quot;&#13;&#10;ELSE &quot;Paind prevaling wage for higher&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Employer Name' datatype='string' name='[EMPLOYER_NAME]' role='dimension' type='nominal' />
+            <column caption='Job Title Subgroup' datatype='string' name='[JOB_TITLE_SUBGROUP]' role='dimension' type='nominal' />
+            <column aggregation='Median' caption='Paid Wage Per Year' datatype='real' name='[PAID_WAGE_PER_YEAR]' role='measure' type='quantitative' />
+            <column aggregation='Median' caption='Prevailing Wage Per Year' datatype='real' name='[PREVAILING_WAGE_PER_YEAR]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_49821124877742085]' derivation='Count' name='[cnt:Calculation_49821124877742085:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_49821124878221318]' derivation='None' name='[none:Calculation_49821124878221318:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EMPLOYER_NAME]' derivation='None' name='[none:EMPLOYER_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JOB_TITLE_SUBGROUP]' derivation='None' name='[none:JOB_TITLE_SUBGROUP:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0voguse1il942p15tiglm0xg5asa].[cnt:Calculation_49821124877742085:qk]' included-values='in-range'>
+            <min>5</min>
+            <max>21</max>
+          </filter>
+          <filter class='categorical' column='[federated.0voguse1il942p15tiglm0xg5asa].[none:Calculation_49821124878221318:nk]'>
+            <groupfilter function='member' level='[none:Calculation_49821124878221318:nk]' member='&quot;Paid less then prevaling wages&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]'>
+            <groupfilter function='member' level='[none:JOB_TITLE_SUBGROUP:nk]' member='&quot;software engineer&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0voguse1il942p15tiglm0xg5asa].[none:Calculation_49821124878221318:nk]</column>
+            <column>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</column>
+            <column>[federated.0voguse1il942p15tiglm0xg5asa].[cnt:Calculation_49821124877742085:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0voguse1il942p15tiglm0xg5asa].[cnt:Calculation_49821124877742085:qk]' />
+              <color column='[federated.0voguse1il942p15tiglm0xg5asa].[cnt:Calculation_49821124877742085:qk]' />
+              <text column='[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]' />
+              <text column='[federated.0voguse1il942p15tiglm0xg5asa].[none:EMPLOYER_NAME:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='OpenSans-Light,Arial,sans-serif'>Adjusting Data-related Salaries for Cost of Living</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (salary_data_states_corrected)' name='federated.0voguse1il942p15tiglm0xg5asa' />
+            <datasource caption='Sheet1 (price_parity)' name='federated.1l1m7y80skqdq51bqhrps1p280iu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0voguse1il942p15tiglm0xg5asa'>
+            <column caption='States we are interested in' datatype='string' name='[Calculation_49821124875595780]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE  [WORK_STATE] &#13;&#10;WHEN &apos;California&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Washington&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Texas&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN &apos;Alabama&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;North Carolina&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;New York&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Massachusetts&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;WHEN  &apos;Maine&apos;&#13;&#10;THEN &quot;View&quot;&#13;&#10;&#13;&#10;ELSE &quot;Don&apos;t view&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Adjusted Paid Wage' datatype='real' name='[Calculation_49821124951584776]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(MEDIAN([PAID_WAGE_PER_YEAR])/ATTR([federated.1l1m7y80skqdq51bqhrps1p280iu].[Price Parity]))* 100' />
+            </column>
+            <column caption='Job Title Subgroup' datatype='string' name='[JOB_TITLE_SUBGROUP]' role='dimension' type='nominal' />
+            <column aggregation='Median' caption='Paid Wage Per Year' datatype='real' name='[PAID_WAGE_PER_YEAR]' role='measure' type='quantitative' />
+            <column caption='Work State' datatype='string' name='[WORK_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Calculation_49821124875595780]' derivation='None' name='[none:Calculation_49821124875595780:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JOB_TITLE_SUBGROUP]' derivation='None' name='[none:JOB_TITLE_SUBGROUP:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WORK_STATE]' derivation='None' name='[none:WORK_STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_49821124951584776]' derivation='User' name='[usr:Calculation_49821124951584776:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1l1m7y80skqdq51bqhrps1p280iu'>
+            <column datatype='real' name='[Price Parity]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0voguse1il942p15tiglm0xg5asa].[none:Calculation_49821124875595780:nk]'>
+            <groupfilter function='member' level='[none:Calculation_49821124875595780:nk]' member='&quot;View&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='manual' column='[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;Maine&quot;</bucket>
+              <bucket>&quot;Alabama&quot;</bucket>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+              <bucket>&quot;North Carolina&quot;</bucket>
+              <bucket>&quot;Texas&quot;</bucket>
+              <bucket>&quot;New York&quot;</bucket>
+              <bucket>&quot;California&quot;</bucket>
+              <bucket>&quot;Washington&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.0voguse1il942p15tiglm0xg5asa].[none:Calculation_49821124875595780:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</rows>
+        <cols>([federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk] / [federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0voguse1il942p15tiglm0xg5asa].[cnt:Calculation_49821124877742085:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:Calculation_49821124878221318:nk]</field>
+            <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:EMPLOYER_NAME:nk]</field>
+            <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>82364.321705426366</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>72443.00979519145</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>67215.958369470944</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>87900.723888314373</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>81788.440567066515</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>82479.030754892825</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;Alabama&quot;</value>
+                <value>85411.630558722914</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;assistant professor&quot;</value>
+                <value>&quot;Maine&quot;</value>
+                <value>70112.589559877175</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;attorney&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>95833.333333333328</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;attorney&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>130206.14425645593</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;attorney&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>138768.43018213357</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;attorney&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>87900.723888314373</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;attorney&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>87241.003271537629</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;attorney&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>87465.051258154708</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;attorney&quot;</value>
+                <value>&quot;Alabama&quot;</value>
+                <value>123147.09236031926</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>72674.41860465116</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>62333.036509349964</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>59841.283607979189</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>66565.667011375393</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>70327.153762268266</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>62441.752096924516</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;Alabama&quot;</value>
+                <value>68415.05131128848</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;business analyst&quot;</value>
+                <value>&quot;Maine&quot;</value>
+                <value>63890.481064483109</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>66860.465116279069</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>66826.357969723962</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>56374.674761491755</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>64164.426059979312</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>70883.315158124315</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>60577.819198508863</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;Alabama&quot;</value>
+                <value>72976.054732041041</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data analyst&quot;</value>
+                <value>&quot;Maine&quot;</value>
+                <value>61412.487205731828</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data scientist&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>111434.10852713177</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data scientist&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>106678.53962600179</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data scientist&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>91066.782307025147</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data scientist&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>93071.354705274047</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data scientist&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>73548.52780806979</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;data scientist&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>95526.561043802431</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;management consultant&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>104651.16279069766</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;management consultant&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>86772.929652715931</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;management consultant&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>104072.15958369471</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;management consultant&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>111464.38469493279</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;management consultant&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>99123.227917121039</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;management consultant&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>90400.745573159365</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;management consultant&quot;</value>
+                <value>&quot;Alabama&quot;</value>
+                <value>112893.95667046749</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>101744.18604651163</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>94365.53873552983</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>81197.745013009553</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>75195.449844881063</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>81788.440567066515</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>82657.036346691515</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;Alabama&quot;</value>
+                <value>79817.559863169896</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;software engineer&quot;</value>
+                <value>&quot;Maine&quot;</value>
+                <value>71647.901740020476</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;Washington&quot;</value>
+                <value>43604.651162790695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;California&quot;</value>
+                <value>42876.224398931437</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;New York&quot;</value>
+                <value>40192.888117953167</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;Texas&quot;</value>
+                <value>47569.803516028951</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;North Carolina&quot;</value>
+                <value>43260.63249727372</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;Massachusetts&quot;</value>
+                <value>44734.389561975768</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;Alabama&quot;</value>
+                <value>45689.851767388827</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+                  <field>[federated.0voguse1il942p15tiglm0xg5asa].[usr:Calculation_49821124951584776:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;teacher&quot;</value>
+                <value>&quot;Maine&quot;</value>
+                <value>37175.025588536337</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:Calculation_49821124875595780:nk]</field>
+            <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:JOB_TITLE_SUBGROUP:nk]</field>
+            <field>[federated.0voguse1il942p15tiglm0xg5asa].[none:WORK_STATE:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      enbC/wenLfAzTsQmNAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
